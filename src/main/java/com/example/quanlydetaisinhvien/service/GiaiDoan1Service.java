@@ -475,14 +475,6 @@ public class GiaiDoan1Service {
                 "Bộ môn không hợp lệ");
         }
 
-        if (user(username).getVaitro() != Vaitro.TRUONGKHOA
-                && !Objects.equals(
-                    currentTeacher(username).getBomonid(),
-                    f.getBomonid())) {
-            throw new AccessDeniedException(
-                "Không được đề xuất cho bộ môn khác");
-        }
-
         List<Long> guides = validGuides(f);
 
         e.setDotdangkyid(f.getDotdangkyid());
