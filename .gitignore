@@ -13,3 +13,5 @@ uploads/
 *.key
 *.p12
 *.pfx
+
+/HeThongQLDTSV_CNTT/
